@@ -28,3 +28,8 @@ The code: `api.ts` (the API's schemas), `model.ts` (state, pure), `view.ts` and
 the only module with side effects. Colours are all in `index.html`'s CSS.
 `src/vendor/prism.js` is Prism, for highlighting Solidity (MIT, see
 `src/vendor/LICENSE.prism`).
+
+## Licence
+
+AGPL-3.0, as hevm; see `LICENSE`. `src/vendor/prism.js` is MIT, see
+`src/vendor/LICENSE.prism`.
