@@ -5,104 +5,62 @@
         "op STOP"
     ],
     "choices": [
-        "step 7: true"
+        "step 6: true"
     ],
     "code": [
+        {
+            "arg": "0x00",
+            "current": false,
+            "op": "PUSH1",
+            "pc": 0
+        },
         {
             "arg": null,
             "current": false,
             "op": "CALLDATALOAD",
-            "pc": 33
+            "pc": 2
         },
         {
-            "arg": null,
+            "arg": "0x05",
             "current": false,
-            "op": "DUP1",
-            "pc": 34
-        },
-        {
-            "arg": "0x0000000000000000000000000000000000000000000000000000000000000005",
-            "current": false,
-            "op": "PUSH32",
-            "pc": 35
+            "op": "PUSH1",
+            "pc": 3
         },
         {
             "arg": null,
             "current": false,
             "op": "EQ",
-            "pc": 68
+            "pc": 5
         },
         {
-            "arg": "0x0000000000000000000000000000000000000000000000000000000000000069",
+            "arg": "0x0a",
             "current": false,
-            "op": "PUSH32",
-            "pc": 69
+            "op": "PUSH1",
+            "pc": 6
         },
         {
             "arg": null,
             "current": false,
             "op": "JUMPI",
-            "pc": 102
-        },
-        {
-            "arg": null,
-            "current": false,
-            "op": "POP",
-            "pc": 103
+            "pc": 8
         },
         {
             "arg": null,
             "current": false,
             "op": "STOP",
-            "pc": 104
+            "pc": 9
         },
         {
             "arg": null,
             "current": true,
             "op": "JUMPDEST",
-            "pc": 105
-        },
-        {
-            "arg": "0x0000000000000000000000000000000000000000000000000000000000000005",
-            "current": false,
-            "op": "PUSH32",
-            "pc": 106
-        },
-        {
-            "arg": null,
-            "current": false,
-            "op": "EQ",
-            "pc": 139
-        },
-        {
-            "arg": "0x00000000000000000000000000000000000000000000000000000000000000af",
-            "current": false,
-            "op": "PUSH32",
-            "pc": 140
-        },
-        {
-            "arg": null,
-            "current": false,
-            "op": "JUMPI",
-            "pc": 173
-        },
-        {
-            "arg": null,
-            "current": false,
-            "op": "INVALID",
-            "pc": 174
-        },
-        {
-            "arg": null,
-            "current": false,
-            "op": "JUMPDEST",
-            "pc": 175
+            "pc": 10
         },
         {
             "arg": null,
             "current": false,
             "op": "STOP",
-            "pc": 176
+            "pc": 11
         }
     ],
     "codeContract": "(SymAddr \"entrypoint\")",
@@ -120,18 +78,14 @@
     "mode": "symbolic",
     "op": "JUMPDEST",
     "output": null,
-    "pathConditions": 1,
-    "pc": 105,
+    "pathConditions": 2,
+    "pc": 10,
     "result": null,
     "simplified": true,
     "source": null,
-    "stack": [
-        {
-            "expr": "(ReadWord\n  idx:\n    0\n  buf: \n    (AbstractBuf \"txdata\")\n)"
-        }
-    ],
+    "stack": [],
     "status": "running",
-    "step": 7,
+    "step": 6,
     "storage": [
         {
             "address": {

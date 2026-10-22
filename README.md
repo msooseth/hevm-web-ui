@@ -20,8 +20,9 @@ browser sees one origin. `node serve.mjs <hevm port> <page port>` sets the ports
 ## Developing
 
 `nix develop -c ./build.sh test` type-checks and runs the tests. They parse
-sample answers of the API in `test/fixtures/`; `./fixtures.sh <hevm checkout>`
-copies newer ones over from hevm.
+sample answers of the API in `test/fixtures/`. After hevm's API changes,
+`node fixtures.mjs [hevm]` rewrites them from a running hevm debugger; it needs
+hevm and an SMT solver on PATH, e.g. in hevm's nix shell.
 
 The code: `api.ts` (the API's schemas), `model.ts` (state, pure), `view.ts` and
 `highlight.ts` (what the panes show, pure), `vdom.ts`, `keys.ts`, and `app.ts`,

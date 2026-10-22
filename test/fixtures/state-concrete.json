@@ -5,89 +5,89 @@
     "choices": [],
     "code": [
         {
-            "arg": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "arg": "0x00",
             "current": false,
-            "op": "PUSH32",
+            "op": "PUSH1",
             "pc": 0
         },
         {
             "arg": null,
             "current": false,
             "op": "JUMPDEST",
-            "pc": 33
+            "pc": 2
         },
         {
             "arg": null,
             "current": false,
             "op": "DUP1",
-            "pc": 34
+            "pc": 3
         },
         {
             "arg": null,
             "current": false,
             "op": "DUP1",
-            "pc": 35
+            "pc": 4
         },
         {
             "arg": null,
             "current": false,
             "op": "MSTORE",
-            "pc": 36
+            "pc": 5
         },
         {
-            "arg": "0x0000000000000000000000000000000000000000000000000000000000000001",
+            "arg": "0x01",
             "current": true,
-            "op": "PUSH32",
-            "pc": 37
+            "op": "PUSH1",
+            "pc": 6
         },
         {
             "arg": null,
             "current": false,
             "op": "ADD",
-            "pc": 70
+            "pc": 8
         },
         {
             "arg": null,
             "current": false,
             "op": "DUP1",
-            "pc": 71
+            "pc": 9
         },
         {
-            "arg": "0x0000000000000000000000000000000000000000000000000000000000000064",
+            "arg": "0x20",
             "current": false,
-            "op": "PUSH32",
-            "pc": 72
+            "op": "PUSH1",
+            "pc": 10
         },
         {
             "arg": null,
             "current": false,
             "op": "GT",
-            "pc": 105
+            "pc": 12
         },
         {
-            "arg": "0x0000000000000000000000000000000000000000000000000000000000000021",
+            "arg": "0x02",
             "current": false,
-            "op": "PUSH32",
-            "pc": 106
+            "op": "PUSH1",
+            "pc": 13
         },
         {
             "arg": null,
             "current": false,
             "op": "JUMPI",
-            "pc": 139
+            "pc": 15
         },
         {
             "arg": null,
             "current": false,
             "op": "STOP",
-            "pc": 140
+            "pc": 16
         }
     ],
     "codeContract": "0x000000000000000000000000000000000000ACAb",
     "codeName": null,
     "contract": "0x000000000000000000000000000000000000ACAb",
     "depth": 0,
-    "gas": 999984,
+    "gas": 18446744073709552000,
     "generatedCode": false,
     "memory": {
         "hex": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
@@ -96,10 +96,10 @@
     "merging": false,
     "message": "",
     "mode": "concrete",
-    "op": "PUSH32",
+    "op": "PUSH1",
     "output": null,
     "pathConditions": 0,
-    "pc": 37,
+    "pc": 6,
     "result": null,
     "simplified": true,
     "source": null,

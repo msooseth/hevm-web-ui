@@ -3,62 +3,62 @@
     "branchMode": "solver",
     "breakpoints": [],
     "choices": [
-        "step 7: true"
+        "step 6: true"
     ],
     "code": [
         {
-            "arg": null,
+            "arg": "0x00",
             "current": false,
-            "op": "STOP",
-            "pc": 104
+            "op": "PUSH1",
+            "pc": 0
         },
         {
             "arg": null,
             "current": false,
-            "op": "JUMPDEST",
-            "pc": 105
+            "op": "CALLDATALOAD",
+            "pc": 2
         },
         {
-            "arg": "0x0000000000000000000000000000000000000000000000000000000000000005",
+            "arg": "0x05",
             "current": false,
-            "op": "PUSH32",
-            "pc": 106
+            "op": "PUSH1",
+            "pc": 3
         },
         {
             "arg": null,
             "current": false,
             "op": "EQ",
-            "pc": 139
+            "pc": 5
         },
         {
-            "arg": "0x00000000000000000000000000000000000000000000000000000000000000af",
+            "arg": "0x0a",
             "current": false,
-            "op": "PUSH32",
-            "pc": 140
+            "op": "PUSH1",
+            "pc": 6
         },
         {
             "arg": null,
             "current": false,
             "op": "JUMPI",
-            "pc": 173
+            "pc": 8
         },
         {
             "arg": null,
             "current": false,
-            "op": "INVALID",
-            "pc": 174
+            "op": "STOP",
+            "pc": 9
         },
         {
             "arg": null,
             "current": false,
             "op": "JUMPDEST",
-            "pc": 175
+            "pc": 10
         },
         {
             "arg": null,
             "current": true,
             "op": "STOP",
-            "pc": 176
+            "pc": 11
         }
     ],
     "codeContract": "(SymAddr \"entrypoint\")",
@@ -76,8 +76,8 @@
     "mode": "symbolic",
     "op": "STOP",
     "output": null,
-    "pathConditions": 2,
-    "pc": 176,
+    "pathConditions": 5,
+    "pc": 11,
     "result": {
         "outcome": "success",
         "output": {
@@ -89,7 +89,7 @@
     "source": null,
     "stack": [],
     "status": "halted",
-    "step": 14,
+    "step": 8,
     "storage": [
         {
             "address": {
