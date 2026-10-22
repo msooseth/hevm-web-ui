@@ -2,14 +2,14 @@
 
 A web page for [hevm](https://github.com/argotorg/hevm)'s interactive debugger.
 
-hevm serves the debugger as a JSON API on localhost (`hevm test --debugger`, see
+hevm serves the debugger as a JSON API on localhost (`hevm test --interactive`, see
 hevm's docs). This page is one client of it; `hevm-debug` is another.
 
 ## Running it
 
 ```shell
 nix develop -c ./build.sh
-hevm test --root <project> --match <test> --debugger    # in another terminal
+hevm test --root <project> --match <test> --interactive    # in another terminal
 nix develop -c node serve.mjs                           # then open http://127.0.0.1:7318
 ```
 

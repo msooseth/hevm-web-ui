@@ -21,7 +21,7 @@ function withoutNoise(v) {
 }
 
 async function session(args, script) {
-  const proc = spawn(hevm, [...args, "--debugger", "--port", "0"], { stdio: ["ignore", "pipe", "inherit"] });
+  const proc = spawn(hevm, [...args, "--interactive", "--port", "0"], { stdio: ["ignore", "pipe", "inherit"] });
   const port = await new Promise((resolve, reject) => {
     let out = "";
     proc.stdout.on("data", (d) => {
