@@ -73,7 +73,6 @@
         "hex": "0x"
     },
     "memorySize": 0,
-    "merging": false,
     "message": "Took branch true for condition (Eq\n  5\n  (ReadWord\n    idx:\n      0\n    buf: \n      (AbstractBuf \"txdata\")\n  )\n).",
     "mode": "symbolic",
     "op": "JUMPDEST",

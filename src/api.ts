@@ -41,7 +41,6 @@ export const view = obj({
   branchMode: lit("solver", "explorer", "checked"),
   simplified: bool,
   warnings: arr(str),
-  merging: bool,
 });
 export type View = Infer<typeof view>;
 

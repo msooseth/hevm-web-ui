@@ -51,7 +51,6 @@ export function statusBar(v: View): VNode[] {
     v.gas !== null && h("span", { class: "meta" }, `gas ${v.gas}`),
     h("span", { class: "contract", title: `code of ${v.codeContract}` }, v.contract),
     v.branchMode !== "solver" && badge(`branches: ${v.branchMode}`, "setting"),
-    v.merging && badge("merging", "setting"),
     !v.simplified && badge("not simplified", "setting"),
   ].filter((n): n is VNode => n !== false);
 }

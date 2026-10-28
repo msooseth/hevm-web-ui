@@ -21,9 +21,7 @@ describe("status bar", () => {
     assert.match(text, /pc 0x[0-9a-f]+ JUMPI/);
   });
   test("shows the settings that are not the default", () => {
-    assert.ok(!/merging/.test(textOf(all(view.statusBar(states["concrete"]!)))));
-    const text = textOf(all(view.statusBar(stateWith({ merging: true, branchMode: "checked", simplified: false }))));
-    assert.match(text, /merging/);
+    const text = textOf(all(view.statusBar(stateWith({ branchMode: "checked", simplified: false }))));
     assert.match(text, /branches: checked/);
     assert.match(text, /not simplified/);
   });

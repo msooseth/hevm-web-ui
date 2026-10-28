@@ -75,7 +75,6 @@
         "hex": "0x"
     },
     "memorySize": 0,
-    "merging": false,
     "message": "Stopped at a symbolic branch. Use 'branch true' or 'branch false'.",
     "mode": "symbolic",
     "op": "JUMPI",

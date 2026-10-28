@@ -71,7 +71,6 @@
         "hex": "0x"
     },
     "memorySize": 0,
-    "merging": false,
     "message": "Execution finished: success, returned nothing",
     "mode": "symbolic",
     "op": "STOP",
